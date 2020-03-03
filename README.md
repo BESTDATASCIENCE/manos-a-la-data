@@ -1,4 +1,5 @@
 ![](static/best_logo.png)
+![](static/hex1.png)
 
 ## Manos a la data!
 
