@@ -24,7 +24,7 @@ Recomendamos a los que quieran a usar los datos lo siguiente:
 # Base de datos
 ## [2020](data/2020)  
 
-| Week | Date | Data | Source |
+| Semana | Fecha | Data | Fuente |
 | :---: | :---: | :--- | :--- |
 | 1 | `2020-03-04` | [Avance Presupuestal - Municipalidades de Lima](data/2020/2020-01-07/readme.md) | [Transparencia Económica](http://apps5.mineco.gob.pe/transparencia/mensual/)
 
