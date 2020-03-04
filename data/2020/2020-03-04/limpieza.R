@@ -1,4 +1,5 @@
 library(stringi)
+library(dplyr)
 setwd("D:/ABCN/Github/manos-a-la-data/data/2020/2020-03-04")
 
 m2019<-readxl::read_xlsx("municipalidades-lima.xlsx",sheet = "2019")
@@ -90,6 +91,66 @@ m2012$`Avance %`  <- sapply(m2012$`Avance %`, function(x) stri_sub(x,2))
 m2012$`Avance %`<- as.numeric(as.character(m2012$`Avance %`))
 m2012$periodo<- 2012
 
+
+m2011<-readxl::read_xlsx("municipalidades-lima.xlsx",sheet = "2011")
+m2011$Municipalidad[m2011$Municipalidad == "151021-301409: MUNICIPALIDAD DISTRITAL DE MIRAFLORES"] <- "151021-301409: MUNICIPALIDAD DISTRITAL DE MIRAFLORES-YAUYOS"
+m2011$Municipalidad[m2011$Municipalidad == "150712-301350: MUNICIPALIDAD DISTRITAL DE LARAOS"] <- "150712-301350: MUNICIPALIDAD DISTRITAL DE SAN PEDRO DE LARAOS"
+m2011$Municipalidad[m2011$Municipalidad == "150513-301323: MUNICIPALIDAD DISTRITAL DE SAN ANTONIO"] <- "150513-301323: MUNICIPALIDAD DISTRITAL DE SAN ANTONIO - CAÑETE"
+m2011$Municipalidad[m2011$Municipalidad == "150101-301250: MUNICIPALIDAD PROVINCIAL DE LIMA"] <- "150101-301250: MUNICIPALIDAD METROPOLITANA DE LIMA"
+m2011$Municipalidad[m2011$Municipalidad == "150514-301324: MUNICIPALIDAD DISTRITAL DE SAN LUIS"] <- "150514-301324: MUNICIPALIDAD DISTRITAL DE SAN LUIS-CAÑETE"
+m2011$Municipalidad<-sapply(m2011$Municipalidad, function(x) stri_sub(x,16))
+m2011$`Avance %`  <- sapply(m2011$`Avance %`, function(x) stri_sub(x,2))
+m2011$`Avance %`<- as.numeric(as.character(m2011$`Avance %`))
+m2011$periodo<- 2011
+
+m2010<-readxl::read_xlsx("municipalidades-lima.xlsx",sheet = "2010")
+m2010$Municipalidad[m2010$Municipalidad == "151021-301409: MUNICIPALIDAD DISTRITAL DE MIRAFLORES"] <- "151021-301409: MUNICIPALIDAD DISTRITAL DE MIRAFLORES-YAUYOS"
+m2010$Municipalidad[m2010$Municipalidad == "150712-301350: MUNICIPALIDAD DISTRITAL DE LARAOS"] <- "150712-301350: MUNICIPALIDAD DISTRITAL DE SAN PEDRO DE LARAOS"
+m2010$Municipalidad[m2010$Municipalidad == "150513-301323: MUNICIPALIDAD DISTRITAL DE SAN ANTONIO"] <- "150513-301323: MUNICIPALIDAD DISTRITAL DE SAN ANTONIO - CAÑETE"
+m2010$Municipalidad[m2010$Municipalidad == "150101-301250: MUNICIPALIDAD PROVINCIAL DE LIMA"] <- "150101-301250: MUNICIPALIDAD METROPOLITANA DE LIMA"
+m2010$Municipalidad[m2010$Municipalidad == "150514-301324: MUNICIPALIDAD DISTRITAL DE SAN LUIS"] <- "150514-301324: MUNICIPALIDAD DISTRITAL DE SAN LUIS-CAÑETE"
+m2010$Municipalidad<-sapply(m2010$Municipalidad, function(x) stri_sub(x,16))
+m2010$`Avance %`  <- sapply(m2010$`Avance %`, function(x) stri_sub(x,2))
+m2010$`Avance %`<- as.numeric(as.character(m2010$`Avance %`))
+m2010$periodo<- 2010
+
+
+
+m2009<-readxl::read_xlsx("municipalidades-lima.xlsx",sheet = "2009")
+m2009$Municipalidad[m2009$Municipalidad == "151021-301409: MUNICIPALIDAD DISTRITAL DE MIRAFLORES"] <- "151021-301409: MUNICIPALIDAD DISTRITAL DE MIRAFLORES-YAUYOS"
+m2009$Municipalidad[m2009$Municipalidad == "150712-301350: MUNICIPALIDAD DISTRITAL DE LARAOS"] <- "150712-301350: MUNICIPALIDAD DISTRITAL DE SAN PEDRO DE LARAOS"
+m2009$Municipalidad[m2009$Municipalidad == "150513-301323: MUNICIPALIDAD DISTRITAL DE SAN ANTONIO"] <- "150513-301323: MUNICIPALIDAD DISTRITAL DE SAN ANTONIO - CAÑETE"
+m2009$Municipalidad[m2009$Municipalidad == "150101-301250: MUNICIPALIDAD PROVINCIAL DE LIMA"] <- "150101-301250: MUNICIPALIDAD METROPOLITANA DE LIMA"
+m2009$Municipalidad[m2009$Municipalidad == "150514-301324: MUNICIPALIDAD DISTRITAL DE SAN LUIS"] <- "150514-301324: MUNICIPALIDAD DISTRITAL DE SAN LUIS-CAÑETE"
+m2009$Municipalidad<-sapply(m2009$Municipalidad, function(x) stri_sub(x,16))
+m2009$`Avance %`  <- sapply(m2009$`Avance %`, function(x) stri_sub(x,2))
+m2009$`Avance %`<- as.numeric(as.character(m2009$`Avance %`))
+m2009$periodo<- 2009
+
+
+m2008<-readxl::read_xlsx("municipalidades-lima.xlsx",sheet = "2008")
+m2008$Municipalidad[m2008$Municipalidad == "151021-301409: MUNICIPALIDAD DISTRITAL DE MIRAFLORES"] <- "151021-301409: MUNICIPALIDAD DISTRITAL DE MIRAFLORES-YAUYOS"
+m2008$Municipalidad[m2008$Municipalidad == "150712-301350: MUNICIPALIDAD DISTRITAL DE LARAOS"] <- "150712-301350: MUNICIPALIDAD DISTRITAL DE SAN PEDRO DE LARAOS"
+m2008$Municipalidad[m2008$Municipalidad == "150513-301323: MUNICIPALIDAD DISTRITAL DE SAN ANTONIO"] <- "150513-301323: MUNICIPALIDAD DISTRITAL DE SAN ANTONIO - CAÑETE"
+m2008$Municipalidad[m2008$Municipalidad == "150101-301250: MUNICIPALIDAD PROVINCIAL DE LIMA"] <- "150101-301250: MUNICIPALIDAD METROPOLITANA DE LIMA"
+m2008$Municipalidad[m2008$Municipalidad == "150514-301324: MUNICIPALIDAD DISTRITAL DE SAN LUIS"] <- "150514-301324: MUNICIPALIDAD DISTRITAL DE SAN LUIS-CAÑETE"
+m2008$Municipalidad<-sapply(m2008$Municipalidad, function(x) stri_sub(x,16))
+m2008$`Avance %`  <- sapply(m2008$`Avance %`, function(x) stri_sub(x,2))
+m2008$`Avance %`<- as.numeric(as.character(m2008$`Avance %`))
+m2008$periodo<- 2008
+
+m2007<-readxl::read_xlsx("municipalidades-lima.xlsx",sheet = "2007")
+m2007$Municipalidad[m2007$Municipalidad == "151021-301409: MUNICIPALIDAD DISTRITAL DE MIRAFLORES"] <- "151021-301409: MUNICIPALIDAD DISTRITAL DE MIRAFLORES-YAUYOS"
+m2007$Municipalidad[m2007$Municipalidad == "150712-301350: MUNICIPALIDAD DISTRITAL DE LARAOS"] <- "150712-301350: MUNICIPALIDAD DISTRITAL DE SAN PEDRO DE LARAOS"
+m2007$Municipalidad[m2007$Municipalidad == "150513-301323: MUNICIPALIDAD DISTRITAL DE SAN ANTONIO"] <- "150513-301323: MUNICIPALIDAD DISTRITAL DE SAN ANTONIO - CAÑETE"
+m2007$Municipalidad[m2007$Municipalidad == "150101-301250: MUNICIPALIDAD PROVINCIAL DE LIMA"] <- "150101-301250: MUNICIPALIDAD METROPOLITANA DE LIMA"
+m2007$Municipalidad[m2007$Municipalidad == "150514-301324: MUNICIPALIDAD DISTRITAL DE SAN LUIS"] <- "150514-301324: MUNICIPALIDAD DISTRITAL DE SAN LUIS-CAÑETE"
+m2007$Municipalidad<-sapply(m2007$Municipalidad, function(x) stri_sub(x,16))
+m2007$`Avance %`  <- sapply(m2007$`Avance %`, function(x) stri_sub(x,2))
+m2007$`Avance %`<- as.numeric(as.character(m2007$`Avance %`))
+m2007$periodo<- 2007
+
+
 municipalidades <- rbind(m2019,m2018)
 municipalidades <- rbind(municipalidades,m2017)
 municipalidades <- rbind(municipalidades,m2016)
@@ -97,7 +158,15 @@ municipalidades <- rbind(municipalidades,m2015)
 municipalidades <- rbind(municipalidades,m2014)
 municipalidades <- rbind(municipalidades,m2013)
 municipalidades <- rbind(municipalidades,m2012)
-# names(municipalidades)
+municipalidades <- rbind(municipalidades,m2011)
+municipalidades <- rbind(municipalidades,m2010)
+municipalidades <- rbind(municipalidades,m2009)
+municipalidades <- rbind(municipalidades,m2008)
+municipalidades <- rbind(municipalidades,m2007)
+names(municipalidades)[9]<-"avance"
+
+provincias<-readxl::read_xlsx("municipalidades-lima.xlsx",sheet = "provincia")
+municipalidades<-inner_join(municipalidades,provincias)
 write.csv(municipalidades,"municipalidades.csv",row.names = F)
 # munis=read.csv("municipalidades.csv")
 
