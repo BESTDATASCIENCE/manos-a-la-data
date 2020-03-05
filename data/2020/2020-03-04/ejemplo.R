@@ -25,6 +25,7 @@ municipalidades2 <- municipalidades %>% filter(PROVINCIA=="151001-301389: MUNICI
 
 ggplot(data = municipalidades2) +
   geom_boxplot(mapping = aes(x = reorder(Municipalidad, avance, FUN = median), y = avance)) +
-  coord_flip()
+  coord_flip() +labs(title = "Avance presupuestal", subtitle = "Histórico 2007-2019",caption = "Fuente: Consulta Amigable",
+                     x="Municipalidades", y="Avance presupuestal (%)")
 
 

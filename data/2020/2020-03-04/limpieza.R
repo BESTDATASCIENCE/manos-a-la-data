@@ -167,6 +167,6 @@ names(municipalidades)[9]<-"avance"
 
 provincias<-readxl::read_xlsx("municipalidades-lima.xlsx",sheet = "provincia")
 municipalidades<-inner_join(municipalidades,provincias)
-write.csv(municipalidades,"municipalidades.csv",row.names = F)
+write.csv(municipalidades,"municipalidades.csv",row.names = F,fileEncoding = "UTF-8")
 # munis=read.csv("municipalidades.csv")
 
