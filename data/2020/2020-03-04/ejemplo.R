@@ -54,7 +54,7 @@ municipalidades2 <- municipalidades %>% filter(PROVINCIA=="151001-301389: MUNICI
              legend.position="none",
              strip.text = element_text(size = 6))  +
       labs(title = "Avance presupuestal", subtitle = "Histórico 2007-2019",caption = "Fuente: Consulta Amigable",
-           x="Periodo", y="Avance presupuestal (%)"))
+           x="Periodo", y="Avance presupuestal (%)")+ stat_smooth(method=lm))
   
   
 

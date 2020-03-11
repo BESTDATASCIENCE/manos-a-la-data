@@ -1,31 +1,15 @@
 library(stringi)
+library(dplyr)
 library(ggplot2)
-municipalidades<-read.csv("https://raw.githubusercontent.com/BESTDATASCIENCE/manos-a-la-data/master/data/2020/2020-03-04/municipalidades.csv")
+library(RColorBrewer)
 
-names(municipalidades)
-sapply(municipalidades,class)
+setwd("D:/ABCN/Github/manos-a-la-data/data/2020/2020-03-11")
+encuesta<-readxl::read_xlsx("c_15.xlsx",sheet = "final")
+colourCount = length(unique(encuesta$`Tipo de actividad`))
+getPalette = colorRampPalette(brewer.pal(9, "Set1"))
+ggplot(data=encuesta, aes(x=Genero, y=Edad1,fill=`Tipo de actividad`)) + geom_bar(stat="identity") + scale_fill_manual(name="Actividades",values = colorRampPalette(brewer.pal(12, "Set2"))(colourCount))+
+  labs(title = "Promedio de horas a la semana que dedican mujeres y hombres adultos a actividades diarias, 2010", subtitle = "Adultos entre 30 y 49 años",caption = "Fuente: INEI",
+       x="Genero", y="Horas a la semana")
 
-municipalidades2 <- municipalidades %>% filter(PROVINCIA=="MUNICIPALIDAD METROPOLITANA DE LIMA")
-municipalidades2 <- municipalidades %>% filter(PROVINCIA=="MUNICIPALIDAD PROVINCIAL DE BARRANCA")
-municipalidades2 <- municipalidades %>% filter(PROVINCIA=="150301-301299: MUNICIPALIDAD PROVINCIAL DE CAJATAMBO")
-municipalidades2 <- municipalidades %>% filter(PROVINCIA=="150401-301304: MUNICIPALIDAD PROVINCIAL DE CANTA")
-municipalidades2 <- municipalidades %>% filter(PROVINCIA=="150501-301311: MUNICIPALIDAD PROVINCIAL DE CAÑETE - SAN VICENTE DE CAÑETE")
-municipalidades2 <- municipalidades %>% filter(PROVINCIA=="150601-301327: MUNICIPALIDAD PROVINCIAL DE HUARAL")
-municipalidades2 <- municipalidades %>% filter(PROVINCIA=="150701-301339: MUNICIPALIDAD PROVINCIAL DE HUAROCHIRI - MATUCANA")
-municipalidades2 <- municipalidades %>% filter(PROVINCIA=="150801-301371: MUNICIPALIDAD PROVINCIAL DE HUAURA")
-municipalidades2 <- municipalidades %>% filter(PROVINCIA=="150901-301383: MUNICIPALIDAD PROVINCIAL DE OYON")
-municipalidades2 <- municipalidades %>% filter(PROVINCIA=="151001-301389: MUNICIPALIDAD PROVINCIAL DE YAUYOS")
-
-
-
-
-
-# ggplot(data = municipalidades2, mapping = aes(x = Municipalidad, y = avance)) +
-#   geom_boxplot()
-
-ggplot(data = municipalidades2) +
-  geom_boxplot(mapping = aes(x = reorder(Municipalidad, avance, FUN = median), y = avance)) +
-  coord_flip() +labs(title = "Avance presupuestal", subtitle = "Histórico 2007-2019",caption = "Fuente: Consulta Amigable",
-                     x="Municipalidades", y="Avance presupuestal (%)")
 
 
