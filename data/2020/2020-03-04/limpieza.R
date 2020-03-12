@@ -177,4 +177,4 @@ municipalidades<-inner_join(municipalidades,provincias)
 names(municipalidades)[c(4,6)]<-c("Certificacion","Atencion de Compromiso Mensual")
 write.csv(municipalidades,"municipalidades.csv",row.names = F)
 # munis=read.csv("municipalidades.csv")
-
+saveRDS(municipalidades,"municipalidades.RDS")
