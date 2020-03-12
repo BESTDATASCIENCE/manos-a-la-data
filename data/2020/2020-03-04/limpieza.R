@@ -175,6 +175,6 @@ names(municipalidades)[9]<-"avance"
 provincias<-readxl::read_xlsx("municipalidades-lima.xlsx",sheet = "provincia")
 municipalidades<-inner_join(municipalidades,provincias)
 names(municipalidades)[c(4,6)]<-c("Certificacion","Atencion de Compromiso Mensual")
-write.csv(municipalidades,"municipalidades.csv",row.names = F)
+write.csv(municipalidades,"municipalidades.csv",row.names = F,fileEncoding = "UTF-8")
 # munis=read.csv("municipalidades.csv")
 saveRDS(municipalidades,"municipalidades.RDS")

@@ -8,7 +8,8 @@ La data de esta semana proviene de [Indicadores de Mujeres Peruanas de Datos Abi
 ```{r}
 # obtèn la data de esta manera si usas R
 
-municipalidades <- readr::read_csv('https://raw.githubusercontent.com/BESTDATASCIENCE/manos-a-la-data/master/data/2020/2020-03-04/encuesta2.csv')
+municipalidades <- readr::read_csv('https://raw.githubusercontent.com/BESTDATASCIENCE/manos-a-la-data/master/data/2020/2020-03-04/encuesta.csv')
+
 
 
 ```
