@@ -1,4 +1,4 @@
-"fecha","dia","contagiados","aceleracion","letalidad","Lima","Loreto","Lambayeque","Callao","Cusco","Ancash","Arequipa","Huanuco","La Libertad","Piura","Ica","Madre de Dios"
+"fecha","dia","contagiados","aceleracion","decesos","Lima","Loreto","Lambayeque","Callao","Cusco","Ancash","Arequipa","Huanuco","La Libertad","Piura","Ica","Madre de Dios"
 2020-03-06,1,1,0,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 2020-03-07,2,6,5,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
 2020-03-08,3,7,1,0,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA,NA
