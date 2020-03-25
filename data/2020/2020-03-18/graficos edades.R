@@ -18,7 +18,7 @@ covid19peruedad=covid19peru %>%
   pivot_longer(-Edad, names_to = "Sexo", values_to = "Confirmados")
 
 saveRDS(covid19peruedad,"covid19edad.RDS")
-save(covid19peruedad,file="covid19edad.rda")
+save(covid19peruedad,file="covid19edad.Rdata")
 
 
 ggplot(data=covid19peruedad, aes(x=Edad, y=Confirmados, fill=Sexo)) +

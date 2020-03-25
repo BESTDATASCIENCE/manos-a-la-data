@@ -4,11 +4,12 @@ library(ggplot2)
 setwd("D:/ABCN/Github/manos-a-la-data/data/2020/2020-03-18")
 covid19peru<-read.csv("https://raw.githubusercontent.com/BESTDATASCIENCE/manos-a-la-data/master/data/2020/2020-03-18/covid19peru.csv")
 covid19peru$fecha <- as.Date(covid19peru$fecha)
+save(covid19peru,file = "covidperuproyeccion.rda")
 
 p <- ggplot(covid19peru, aes(x=fecha, y=contagiados,group = 1)) +
   geom_line() +
   stat_smooth(method="gam",fullrange=TRUE)   +
-  scale_x_date(limits = c(as.Date("2020-03-06"), as.Date("2020-03-25")),
+  scale_x_date(limits = c(as.Date("2020-03-06"), as.Date("2020-03-24")),
                date_labels = '%m/%d', breaks = covid19peru$fecha) +
   labs(title = "Evolución de casos confirmados", subtitle = "En Perú",caption = "Fuente: MINSA",
        x="Fecha", y="Contagiados")
