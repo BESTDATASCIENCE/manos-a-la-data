@@ -30,12 +30,13 @@ Recomendamos a los que quieran a usar los datos lo siguiente:
 | 2 | `2020-03-11` | [Promedio de horas a la semana que dedican mujeres y hombres adultas y adultos a actividades diarias](http://bit.ly/38HH0xN) | [Indicadores de Mujeres Peruanas](https://www.datosabiertos.gob.pe/dataset/indicadores-de-mujeres-peruanas/resource/f3139e88-8f61-495b-9350-3b0f58ac9255) | |
 | 3 | `2020-03-18` | [Evolución de casos confirmados de Covid-19](http://bit.ly/3bc2yUV) | [MINSA](https://www.gob.pe/minsa/) | |
 | 4 | `2020-03-25` | [ Costo de estudios universitarios en EEUU, diversidad y pagos](http://bit.ly/3bc2yUV) | [Departamento de EEUU de educación](https://www.ed.gov/) | |
+| 5 | `2020-04-01` | [ Comercio Internacional](https://bit.ly/3bIs448) | [Open Trade Statistics](https://tradestatistics.io/) | |
 
 
 ***
 
 # Acerca de BEST
 
-Behavioral Economics & Data Science Team (BEST) es una asociación sin fines de lucro que busca promociar la ciencia de datos así como la economía conductual.
+Behavioral Economics & Data Science Team (BEST) es una asociación sin fines de lucro que busca promocionar la ciencia de datos así como la economía conductual.
 
 ![](static/best_logo.png)
