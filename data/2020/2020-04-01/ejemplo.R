@@ -9,7 +9,7 @@ loadfonts()
 fonts()
 
 
-comercio_hispanoamerica_mundo <- readr::read_csv("https://raw.githubusercontent.com/cienciadedatos/datos-de-miercoles/master/datos/2019/2019-05-01/comercio_hispanoamerica_mundo_agregado.csv")
+comercio_hispanoamerica_mundo <- readr::read_csv("https://github.com/BESTDATASCIENCE/manos-a-la-data/blob/master/data/2020/2020-04-01/comercio_hispanoamerica_mundo_agregado.csv")
 producto=data.frame(
   nombre_comunidad_producto=unique(comercio_hispanoamerica_mundo$nombre_comunidad_producto),
   nombre_corto=unique(comercio_hispanoamerica_mundo$nombre_comunidad_producto),
