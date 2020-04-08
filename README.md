@@ -31,6 +31,7 @@ Recomendamos a los que quieran a usar los datos lo siguiente:
 | 3 | `2020-03-18` | [Evolución de casos confirmados de Covid-19](http://bit.ly/3bc2yUV) | [MINSA](https://www.gob.pe/minsa/) | |
 | 4 | `2020-03-25` | [ Costo de estudios universitarios en EEUU, diversidad y pagos](http://bit.ly/3bc2yUV) | [Departamento de EEUU de educación](https://www.ed.gov/) | |
 | 5 | `2020-04-01` | [ Comercio Internacional](https://bit.ly/3bIs448) | [Open Trade Statistics](https://tradestatistics.io/) | |
+| 6 | `2020-04-08` | [ Evaluación censal de estudiantes de Perú](https://bit.ly/3bIs448) | [Minedu](https://www.gob.pe/minedu) | |
 
 
 ***
