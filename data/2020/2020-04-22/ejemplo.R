@@ -1,6 +1,7 @@
 setwd("D:/ABCN/Github/manos-a-la-data/data/2020/2020-04-22")
 library(dplyr)
 pbi=readxl::read_xlsx("5_actecon_kte_12.xlsx",sheet = 1)
+
 View(pbi) # se ve muchos vacios
 pbi=readxl::read_xlsx("5_actecon_kte_12.xlsx",sheet = 1,skip = 3) # espaciamos 3 para coger solo algunas filas de inicio
 pbi=readxl::read_xlsx("5_actecon_kte_12.xlsx",sheet = 1,skip = 4) # espaciamos 4 para que se vuelvan numéricos ciertas columnas que tenian texto en el caso anterior
@@ -30,4 +31,13 @@ bd_trimestral$trimestre= as.Date(c("2007-03-31","2007-06-30","2007-09-30","2007-
                            "2019-03-31","2019-06-30","2019-09-30","2019-12-31"))
 
 class((bd_trimestral$trimestre))
-View(bd_trimestral) 
+View(bd_trimestral)
+
+library(lubridate)
+class(bd_trimestral$trimestre)
+?lubridate
+
+bd_trimestral$año=year(bd_trimestral$trimestre)
+
+bd_trimestral %>% filter(año=="2019")  %>% View()
+
