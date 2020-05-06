@@ -1,7 +1,7 @@
-setwd("D:/ABCN/Github/manos-a-la-data/data/2020/2020-04-29")
+setwd("D:/ABCN/Github/manos-a-la-data/data/2020/2020-05-06")
 library(dplyr)
-informales=readxl::read_xlsx("peao-cuad-7.xlsx",sheet = 1)
-
-View(informales) # se ve muchos vacios
-informales=readxl::read_xlsx("peao-cuad-7.xlsx",sheet = 1,skip = 3) # espaciamos 3 para coger solo algunas filas de inicio
-informales=informales[complete.cases(informales$`2008`),]
+aranceles=readxl::read_xlsx("03_Arancel_Nominal_y_Efectivo_1993_2019.xlsx",sheet = 2,skip = 5)
+names(aranceles)= c("año","nominal","efectivo")
+aranceles=aranceles[complete.cases(aranceles$nominal),]
+View(aranceles) # se ve muchos vacios
+aranceles$año=1993:2019
