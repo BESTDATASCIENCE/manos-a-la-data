@@ -1,4 +1,4 @@
-# Arancel Nominal y Efectivo 1993-2019									
+# Ingreso de turistas internacionales según zona geográfica y país de residencia.
 
 
 
