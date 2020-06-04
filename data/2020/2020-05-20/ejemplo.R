@@ -1,5 +1,6 @@
 library(feather)
 library(dplyr)
 library(tidyr)
-setwd("~/nudge/Analysis/data/modified_exclusions/")
-data=read_feather("pt_replication_modified_exclusions_data.feather")
+
+data<-read.csv("https://github.com/BESTDATASCIENCE/manos-a-la-data/blob/master/data/2020/2020-05-27/positivos_covid.csv?raw=true")
+head(data) 

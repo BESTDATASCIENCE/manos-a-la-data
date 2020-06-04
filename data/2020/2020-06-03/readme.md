@@ -1,5 +1,6 @@
-# Casos positivos por COVID-19 - [Ministerio de Salud - MINSA]
+# Adquisiones de material del COVID-19 por el CENARES
 
+Fuente:Centro Nacional de Abastecimiento de Recursos Estratégicos en Salud - CENARES.
 
 
 ### Carga los datos de R así
