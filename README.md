@@ -32,6 +32,22 @@ Recomendamos a los que quieran a usar los datos lo siguiente:
 | 4 | `2020-03-25` | [ Costo de estudios universitarios en EEUU, diversidad y pagos](http://bit.ly/3bc2yUV) | [Departamento de EEUU de educación](https://www.ed.gov/) | |
 | 5 | `2020-04-01` | [ Comercio Internacional](https://bit.ly/3bIs448) | [Open Trade Statistics](https://tradestatistics.io/) | |
 | 6 | `2020-04-08` | [ Evaluación censal de estudiantes de Perú](https://bit.ly/3bIs448) | [Minedu](https://www.gob.pe/minedu) | |
+| 7 | `2020-04-15` | [ Censo nacional de comisarias](https://bit.ly/3bIs448) | [INEI](https://www.gob.pe/minedu) | |
+| 8 | `2020-04-22` | [ Actualización del PBI trimestral y anual del INEI](https://bit.ly/3bIs448) | [INEI](https://www.gob.pe/minedu) | |
+| 9 | `2020-04-29` | [ TASA DE EMPLEO INFORMAL, SEGÚN ÁMBITO GEOGRÁFICO, 2008 - 2018](https://bit.ly/3bIs448) | [INEI](https://www.gob.pe/minedu) | |
+| 10 | `2020-05-06` | [ Arancel Nominal y Efectivo 1993-2019](https://bit.ly/3bIs448) | [Mincetur](https://www.gob.pe/minedu) | |
+| 11 | `2020-05-13` | [ Ingreso de turistas internacionales según zona geográfica y país de residencia](https://bit.ly/3bIs448) | [Mincetur](https://www.gob.pe/minedu) | |
+| 12 | `2020-05-20` | [Data de paper de replicación de Economía Conductual](https://bit.ly/3bIs448) | [OSF](https://osf.io/uzg3w/) | |
+| 13 | `2020-05-27` | [ Casos positivos por COVID-19 - [Ministerio de Salud - MINSA]](https://bit.ly/3bIs448) | [Minsa](https://www.gob.pe/minedu) | |
+| 14 | `2020-06-03` | [ Adquisiones de material del COVID-19 por el CENARES](https://bit.ly/3bIs448) | [MEF](https://www.gob.pe/minedu) | |
+| 15 | `2020-06-10` | [ Listado de consorcios adjudicados del SEACE](https://bit.ly/3bIs448) | [MEF](https://www.gob.pe/minedu) | |
+| 16 | `2020-06-17` | [ Estadísticas Reactiva Perú: Lista Empresas Beneficiadas Reactiva Peru](https://bit.ly/3bIs448) | [MEF](https://www.gob.pe/minedu) | |
+| 17 | `2020-06-24` | [ Bono Independiente](https://bit.ly/3bIs448) | [Ministerio de Trabajo y Promocion del Empleo - MTPE](https://www.gob.pe/minedu) | |
+| 18 | `2020-07-01` | [ AFILIADOS ACTIVOS POR INSTITUCIÓN ADMINISTRADORA DE FONDOS DE ASEGURAMIENTO EN SALUD. 2015-2019](https://bit.ly/3bIs448) | [Susalud](https://www.gob.pe/minedu) | |
+| 19 | `2020-07-08` | [ DATASET: TRÁFICO MÓVIL ENTRANTE POR MODALIDAD CONTRACTUAL](https://bit.ly/3bIs448) | [Osiptel](https://www.gob.pe/minedu) | |
+| 20 | `2020-07-15` | [ DATASET: DEUDA DE LOS GOBIERNOS REGIONALES, GOBIERNOS LOCALES Y OTROS](https://bit.ly/3bIs448) | [MEF](https://www.gob.pe/minedu) | |
+| 21 | `2020-07-22` | [ Mensajes a la Nación](https://bit.ly/3bIs448) | [Gobierno del Perú](https://www.gob.pe/) | |
+| 22 | `2020-07-29` | [ TBD](https://bit.ly/3bIs448) |  | |
 
 
 ***
