@@ -1,0 +1,7 @@
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(readr)
+library(dplyr)
+setwd("D:/ABCN/Github/manos-a-la-data/data/2020/2020-07-29")
+barreras <- readxl::read_xls("Data Logros al 31.12.2017.xls",skip = 1)
