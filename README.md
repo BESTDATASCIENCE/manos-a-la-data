@@ -47,7 +47,7 @@ Recomendamos a los que quieran a usar los datos lo siguiente:
 | 19 | `2020-07-08` | [ DATASET: TRÁFICO MÓVIL ENTRANTE POR MODALIDAD CONTRACTUAL](https://bit.ly/3bIs448) | [Osiptel](https://www.gob.pe/minedu) | |
 | 20 | `2020-07-15` | [ DATASET: DEUDA DE LOS GOBIERNOS REGIONALES, GOBIERNOS LOCALES Y OTROS](https://bit.ly/3bIs448) | [MEF](https://www.gob.pe/minedu) | |
 | 21 | `2020-07-22` | [ Mensajes a la Nación](https://bit.ly/3bIs448) | [Gobierno del Perú](https://www.gob.pe/) | |
-| 22 | `2020-07-29` | [ TBD](https://bit.ly/3bIs448) |  | |
+| 22 | `2020-07-29` | [ Eliminacion de Barreras por acción de la Comisión de Eliminación de Barreras Burocráticas (CEB)](https://bit.ly/3bIs448) |  Indecopi| |
 
 
 ***
