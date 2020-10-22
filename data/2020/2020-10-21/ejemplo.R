@@ -1,0 +1,11 @@
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(readr)
+library(dplyr)
+library(vroom)
+library(readstata13)
+options(scipen=999)
+setwd("D:/ABCN/Github/manos-a-la-data/data/2020/2020-10-21")
+data1 <- readxl::read_xls("Saldo de IED en el Perú por País de Domicilio y Sector Destino_a jun 2020.xls",sheet = 1,skip = 3)
+
