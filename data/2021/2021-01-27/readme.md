@@ -1,6 +1,6 @@
-# Indicadores sobre educación rural - 2018
+# Afiliados y montos del Sistema Nacional de Pensiones ONP
 
-La base de datos proviene de [https://www.datosabiertos.gob.pe/dataset/indicadores-sobre-educaci%C3%B3n-rural-0](https://www.datosabiertos.gob.pe/dataset/indicadores-sobre-educaci%C3%B3n-rural-0).
+La base de datos proviene de [datos abiertos](https://www.datosabiertos.gob.pe).
 
 
 
