@@ -16,5 +16,5 @@ library(htmltab)
 
 
 setwd(here::here("data/2021/2021-03-03/"))
-peajes1<- readxl::read_xlsx("202007-PDE-REP-00029_0.xlsx")
-peajes2<- readxl::read_xlsx("202007-PDE-REP-00026_0.xlsx")
+peajes1<- readxl::read_xlsx("202007-PDE-REP-00029_0.xlsx") # número de vehiculos
+peajes2<- readxl::read_xlsx("202007-PDE-REP-00026_0.xlsx") # montos recaudados
