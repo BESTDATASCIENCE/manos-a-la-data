@@ -1,0 +1,20 @@
+library(readxl)
+library(dplyr)
+library(tidyr)
+library(readr)
+library(dplyr)
+library(vroom)
+library(readstata13)
+library(foreign)
+library(here)
+options(scipen=999)
+
+library(XML)
+library(RCurl)
+library(rlist)
+library(htmltab)
+
+
+setwd(here::here("data/2021/2021-03-10/"))
+comisarias2020 <- readxl::read_xlsx("comisarias2020.xlsx",skip = 2)
+comisarias2019 <- readxl::read_xlsx("comisarias2019.xlsx",skip = 2)
