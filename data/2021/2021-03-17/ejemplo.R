@@ -15,6 +15,6 @@ library(rlist)
 library(htmltab)
 
 
-setwd(here::here("data/2021/2021-03-10/"))
-comisarias2020 <- readxl::read_xlsx("comisarias2020.xlsx",skip = 2)
-comisarias2019 <- readxl::read_xlsx("comisarias2019.xlsx",skip = 2)
+setwd(here::here("data/2021/2021-03-17/"))
+encuestas <- readxl::read_xlsx("encuestas.xlsx")
+
